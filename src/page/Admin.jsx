@@ -21,15 +21,16 @@ const Admin = () => {
 
   return (
     <div>
-      <h2>Registered Users</h2>
-      <ul>
-        {users.map((user, index) => (
-          <li key={index}>
-            <Link to={`/admin/profile/${index}`}>{user.firstName} {user.lastName}</Link>
-            <button onClick={() => deleteUser(index)}>Delete</button>
-          </li>
-        ))}
-      </ul>
+    <div className='d-flex justify-content-center mt-5'>
+      <p>Welcome to the Admin page</p>
+     
+      
+    </div>
+    <div>
+      <Link className="btn btn-success d-flex justify-content-center" to="/register">Register to Continue </Link>
+
+      </div>
+
     </div>
   );
 };
